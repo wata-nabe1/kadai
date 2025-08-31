@@ -1,11 +1,19 @@
 body{
-    margin:0 auto;
+    margin:0;
     padding:0;
-    max-width:980px;
+    width:100%;
 }
 
 .logo{
     background-color:#c8f2ac;
+}
+
+.logo1{
+    margin-left:40px;
+}
+
+.logo2{
+    margin-right:40px;
 }
 
 nav{
@@ -27,9 +35,19 @@ li{
     list-style:none;
 }
 
+.navi1, .navi2, .navi3{
+    font-size:21px;
+    transition:font-size 0.3s ease;
+}
+
+.navi1:hover,
+.navi2:hover,
+.navi3:hover{
+    font-size:26px;
+}
+
 .main{
     width:100%;
-    max-width:980px;
     height:auto;
     display:block;
 }
@@ -43,22 +61,36 @@ li{
 
 .sb1, .sb2{
     width:400px;
-    margin-left:50px;
-    margin-top:20px;
-    box-shadow:0 4px 6px rgba(12, 12, 12, 0.5);
+    margin-left:80px;
+    margin-top:-10px;
+    box-shadow:4px 4px 6px rgba(12, 12, 12, 0.5);
 }
 
 .ex{
     flex:1;
-    font-size:32px;
-    line-height:1;
+    font-size:24px;
+    line-height:1.2;
     font-weight:300;
-    margin-right:65px;
+    margin-right:100px;
+    margin-top:-20px;
 }
 
-.link{
-    display:block;
+.link-wrap{
     text-align:right;
+    margin-top:50px;
+}
+
+.link1{
+    display:inline;
+}
+
+.link-wrap2{
+    text-align:right;
+    margin-top:110px;
+}
+
+.link2{
+    display:inline;
 }
 
 #title1, #title2, #title3, #title4{
@@ -69,6 +101,7 @@ li{
     line-height:1;
     padding-bottom:1.5px;
     width:fit-content;
+    font-size:36px;
 }
 
 #title1{
@@ -79,34 +112,60 @@ li{
     margin-top:80px;
 }
 
+.bana{
+    text-align:center;
+}
 .sb3{
-    display:block;
+    display:inline-block;
     width:780px;
     margin:20px auto;
+    box-shadow:10px 10px 12px rgba(12, 12, 12, 0.5);
 }
 
 .btn{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns: 1fr auto;
     align-items:center;
     background-color:#a6d48f;
     color:#fff;
-    font-size:24px;
+    font-size:40px;
     font-weight:bold;
-    border-radius:50px;
+    border-radius:80px;
     padding:20px 30px;
-    width:500px;
+    width:700px;
     margin:20px auto;
     box-shadow:3px 3px 8px rgba(0,0,0,0.2);
     cursor:pointer;
 }
 
+.btn .text{
+    grid-column:1/-1;
+    grid-row:1;
+    justify-self:center;
+    text-align:center;
+}
+.btn .arrow{
+    grid-column:2;
+    grid-row:1;
+    justify-self:end;
+}
+
 footer{
     background-color:#c8f2ac;
     color:black;
+    margin-top:120px;
 }
 
 .info{
     display:flex;
     justify-content:space-between;
+    padding:0 20px;
+}
+
+.info1{
+    text-align:left;
+}
+
+.info2{
+    text-align:right;
 }
