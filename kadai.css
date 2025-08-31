@@ -75,22 +75,16 @@ li{
     margin-top:-20px;
 }
 
-.link-wrap{
+.link1{
+    display:block;
     text-align:right;
     margin-top:50px;
 }
 
-.link1{
-    display:inline;
-}
-
-.link-wrap2{
+.link2{
+    display:block;
     text-align:right;
     margin-top:110px;
-}
-
-.link2{
-    display:inline;
 }
 
 #title1, #title2, #title3, #title4{
@@ -112,11 +106,8 @@ li{
     margin-top:80px;
 }
 
-.bana{
-    text-align:center;
-}
 .sb3{
-    display:inline-block;
+    display:block;
     width:780px;
     margin:20px auto;
     box-shadow:10px 10px 12px rgba(12, 12, 12, 0.5);
