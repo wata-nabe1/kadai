@@ -4,15 +4,15 @@ body{
     width:100%;
 }
 
-.logo{
+.header{
     background-color:#c8f2ac;
 }
 
-.logo1{
+.logo_left{
     margin-left:40px;
 }
 
-.logo2{
+.logo_right{
     margin-right:40px;
 }
 
@@ -35,14 +35,14 @@ li{
     list-style:none;
 }
 
-.navi1, .navi2, .navi3{
+.nav_scenery, .nav_animal, .nav_contact{
     font-size:21px;
     transition:font-size 0.3s ease;
 }
 
-.navi1:hover,
-.navi2:hover,
-.navi3:hover{
+.nav_scenery:hover,
+.nav_animal:hover,
+.nav_contact:hover{
     font-size:26px;
 }
 
@@ -52,14 +52,14 @@ li{
     display:block;
 }
 
-.sec{
+.contents{
     display:flex;
     align-items:flex-start;
     gap:20px;
     margin:30px 0;
 }
 
-.sb1, .sb2{
+.content_scenery, .content_animal{
     width:400px;
     margin-left:80px;
     margin-top:-10px;
@@ -75,19 +75,19 @@ li{
     margin-top:-20px;
 }
 
-.link1{
+.link_related_scenery{
     display:block;
     text-align:right;
     margin-top:50px;
 }
 
-.link2{
+.link_related_animal{
     display:block;
     text-align:right;
     margin-top:110px;
 }
 
-#title1, #title2, #title3, #title4{
+#title_scenery, #title_animal, #title_link, #title_contact{
     margin:0 auto;
     color:#16c727;
     transform:skewx(-20deg);
@@ -98,15 +98,15 @@ li{
     font-size:36px;
 }
 
-#title1{
+#title_scenery{
     margin-top:40px;
 }
 
-#title2, #title3, #title4{
+#title_animal, #title_link, #title_contact{
     margin-top:80px;
 }
 
-.sb3{
+.ads{
     display:block;
     width:780px;
     margin:20px auto;
@@ -129,13 +129,13 @@ li{
     cursor:pointer;
 }
 
-.btn .text{
+.btn_text{
     grid-column:1/-1;
     grid-row:1;
     justify-self:center;
     text-align:center;
 }
-.btn .arrow{
+.btn_arrow{
     grid-column:2;
     grid-row:1;
     justify-self:end;
@@ -153,10 +153,10 @@ footer{
     padding:0 20px;
 }
 
-.info1{
+.info_provider{
     text-align:left;
 }
 
-.info2{
+.info_contact{
     text-align:right;
 }
